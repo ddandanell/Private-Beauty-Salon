@@ -4,9 +4,9 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "wouter";
 
-import maniImg from "@assets/generated_images/gel_manicure_with_tropical_vibe.png";
-import pediImg from "@assets/generated_images/luxury_foot_spa_pedicure_in_bali.png";
-import nailArtImg from "@assets/generated_images/elegant_modern_french_tip_nails_with_chrome_accent.png";
+import maniImg from "@assets/generated_images/gel_manicure_with_tropical_vibe.webp";
+import pediImg from "@assets/generated_images/luxury_foot_spa_pedicure_in_bali.webp";
+import nailArtImg from "@assets/generated_images/elegant_modern_french_tip_nails_with_chrome_accent.webp";
 
 const services = [
   {

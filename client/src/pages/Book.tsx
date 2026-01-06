@@ -10,7 +10,7 @@ import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { cn } from "@/lib/utils";
-import certBanner from "@assets/generated_images/professional_nail_brand_certification_logos_banner.png";
+import certBanner from "@assets/generated_images/professional_nail_brand_certification_logos_banner.webp";
 
 const services = [
   { id: "gel-mani", name: "Gel Manicure", price: "350k", duration: "60m" },

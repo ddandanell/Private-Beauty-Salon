@@ -8,8 +8,8 @@ import { Badge } from "@/components/ui/badge";
 import { Search, MapPin, Car, CheckCircle2, Info } from "lucide-react";
 import { Link } from "wouter";
 import { PageHero } from "@/components/layout/PageHero";
-import mapImg from "@assets/generated_images/stylized_minimal_map_of_bali_service_zones.png";
-import heroImg from "@assets/generated_images/scenic_bali_rice_terrace_drive.png";
+import mapImg from "@assets/generated_images/stylized_minimal_map_of_bali_service_zones.webp";
+import heroImg from "@assets/generated_images/scenic_bali_rice_terrace_drive.webp";
 
 const locations = [
   // Free Zone (Canggu/Seminyak Hub)

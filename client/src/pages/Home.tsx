@@ -5,7 +5,7 @@ import { LocationStrip } from "@/components/features/LocationStrip";
 import { TestimonialStrip } from "@/components/features/TestimonialStrip";
 import { WhatsAppButton } from "@/components/ui/WhatsAppButton";
 import { Footer } from "@/components/layout/Footer";
-import hygieneImg from "@assets/generated_images/sterilized_nail_tools_in_sealed_pouch_on_marble.png";
+import hygieneImg from "@assets/generated_images/sterilized_nail_tools_in_sealed_pouch_on_marble.webp";
 
 export default function Home() {
   return (

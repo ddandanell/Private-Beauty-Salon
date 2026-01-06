@@ -1,6 +1,6 @@
 import { Link } from "wouter";
 import { Instagram, Facebook, Youtube } from "lucide-react";
-import scooterIcon from "@assets/generated_images/minimalist_gold_line_art_scooter_icon.png";
+import scooterIcon from "@assets/generated_images/minimalist_gold_line_art_scooter_icon.webp";
 
 export function Footer() {
   return (

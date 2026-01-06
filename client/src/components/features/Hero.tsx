@@ -1,7 +1,7 @@
 import { Link } from "wouter";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import heroBg from "@assets/generated_images/elegant_manicure_in_a_luxury_bali_villa_setting.png";
+import heroBg from "@assets/generated_images/elegant_manicure_in_a_luxury_bali_villa_setting.webp";
 import { ArrowRight, Star } from "lucide-react";
 
 export function Hero() {

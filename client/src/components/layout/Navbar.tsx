@@ -4,7 +4,7 @@ import { Menu, X, Instagram } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
-import scooterIcon from "@assets/generated_images/minimalist_gold_line_art_scooter_icon.png";
+import scooterIcon from "@assets/generated_images/minimalist_gold_line_art_scooter_icon.webp";
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);

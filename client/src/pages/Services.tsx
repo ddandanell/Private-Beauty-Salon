@@ -8,12 +8,12 @@ import { Check, Sparkles, Clock } from "lucide-react";
 import { Link } from "wouter";
 import { PageHero } from "@/components/layout/PageHero";
 
-import bridalImg from "@assets/generated_images/bridal_nail_art_with_lace_details.png";
-import acrylicImg from "@assets/generated_images/professional_acrylic_nail_extension_application.png";
-import artImg from "@assets/generated_images/elegant_modern_french_tip_nails_with_chrome_accent.png";
-import maniImg from "@assets/generated_images/gel_manicure_with_tropical_vibe.png";
-import pediImg from "@assets/generated_images/luxury_foot_spa_pedicure_in_bali.png";
-import heroImg from "@assets/generated_images/premium_nail_polish_display_on_marble.png";
+import bridalImg from "@assets/generated_images/bridal_nail_art_with_lace_details.webp";
+import acrylicImg from "@assets/generated_images/professional_acrylic_nail_extension_application.webp";
+import artImg from "@assets/generated_images/elegant_modern_french_tip_nails_with_chrome_accent.webp";
+import maniImg from "@assets/generated_images/gel_manicure_with_tropical_vibe.webp";
+import pediImg from "@assets/generated_images/luxury_foot_spa_pedicure_in_bali.webp";
+import heroImg from "@assets/generated_images/premium_nail_polish_display_on_marble.webp";
 
 const ServiceCategory = ({ title, items, image, reversed = false }: { title: string, items: any[], image: string, reversed?: boolean }) => (
   <div className={`flex flex-col md:flex-row gap-8 items-center py-12 ${reversed ? 'md:flex-row-reverse' : ''}`}>

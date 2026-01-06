@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { X } from "lucide-react";
 import { useState, useEffect } from "react";
-import kienImg from "@assets/generated_images/friendly_male_customer_service_agent_portrait.png";
+import kienImg from "@assets/generated_images/friendly_male_customer_service_agent_portrait.webp";
 
 export function WhatsAppButton() {
   const [isOpen, setIsOpen] = useState(false);

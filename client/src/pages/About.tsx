@@ -7,10 +7,10 @@ import { Link } from "wouter";
 import { Trophy, GraduationCap, Users, Heart, ShieldCheck, Zap } from "lucide-react";
 import { PageHero } from "@/components/layout/PageHero";
 
-import teamImg from "@assets/generated_images/stylish_balinese_nail_team_with_male_center_lead.png";
-import scooterImg from "@assets/generated_images/nail_tech_on_scooter_in_bali_rice_fields.png";
-import expertImg from "@assets/generated_images/master_nail_tech_teaching_precise_application.png";
-import heroImg from "@assets/generated_images/luxury_mobile_beauty_kit_setup.png";
+import teamImg from "@assets/generated_images/stylish_balinese_nail_team_with_male_center_lead.webp";
+import scooterImg from "@assets/generated_images/nail_tech_on_scooter_in_bali_rice_fields.webp";
+import expertImg from "@assets/generated_images/master_nail_tech_teaching_precise_application.webp";
+import heroImg from "@assets/generated_images/luxury_mobile_beauty_kit_setup.webp";
 
 export default function About() {
   return (
