@@ -20,7 +20,7 @@ export function Hero() {
       </div>
 
       {/* Content - Left Aligned Editorial Style */}
-      <div className="container relative z-10 px-4 pt-20">
+      <div className="container relative z-10 px-4 pt-32 md:pt-40">
         <motion.div
           initial={{ opacity: 0, x: -30 }}
           animate={{ opacity: 1, x: 0 }}
@@ -36,12 +36,12 @@ export function Hero() {
              </span>
           </div>
 
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif font-bold text-white leading-[1.1] mb-8 drop-shadow-xl tracking-tight">
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-serif font-bold text-white leading-[1.1] mb-6 drop-shadow-xl tracking-tight">
             Bali's Best <br />
             <span className="italic text-primary-foreground font-light">Mobile Nails</span>
           </h1>
           
-          <p className="text-lg md:text-xl text-white/90 font-light mb-10 max-w-lg leading-relaxed drop-shadow-md border-l-2 border-primary pl-6">
+          <p className="text-lg md:text-xl text-white/90 font-light mb-8 max-w-lg leading-relaxed drop-shadow-md border-l-2 border-primary pl-6">
             Skip the traffic. We bring the full luxury salon experience to your villa in Seminyak, Canggu, Ubud & Uluwatu.
           </p>
           
