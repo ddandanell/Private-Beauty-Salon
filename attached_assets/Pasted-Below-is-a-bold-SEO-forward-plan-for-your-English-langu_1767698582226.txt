@@ -1,0 +1,172 @@
+Below is a bold, SEO-forward plan for your English-language “mobile nail and foot spa” service in Bali. I’ll start with keyword analysis, then craft the full site structure, page-by-page content outlines, CTAs, and technical SEO/UX guidance. The angle: luxury-yet-accessible, “we come to you,” hyper-localized to Bali areas, optimized for “mobile nail salon,” “home service,” and “pedicure/manicure Bali” queries.
+
+## 1) Keyword Analysis (prioritized mix of intent + volume potential)
+- Primary “money” keywords:
+  - mobile nail salon Bali
+  - home service manicure Bali / home service pedicure Bali
+  - nail salon that comes to you Bali / mobile manicure pedicure Bali
+  - at home nail service Bali / at home spa Bali
+- Location + service combos:
+  - [seminyak / canggu / ubud / kuta / uluwatu / nusa dua / sanur] + manicure / pedicure / nail salon / gel nails / nail art / foot spa / callus treatment / acrylic nails / BIAB / shellac / gel polish
+- High-intent service specifics:
+  - gel manicure Bali, gel pedicure Bali, nail art Bali, BIAB nails Bali, acrylic nails Bali, Russian manicure Bali, foot spa at home Bali, callus removal Bali
+- Brandable/experience:
+  - luxury mobile spa Bali, villa nail service Bali, in-villa manicure pedicure Bali, bachelorette spa Bali, bridal nails Bali
+- Supporting/FAQ:
+  - how much is a manicure in Bali, hygiene mobile nail service Bali, best mobile nail techs Bali, late-night manicure Bali, eco-friendly nail products Bali
+- Content moats (blog/FAQ ideas):
+  - “Best nail art trends in Bali,” “How to prep your villa for a mobile spa,” “Gel vs BIAB in Bali humidity,” “Hygiene standards for mobile nail services,” “Bridal party nails in Bali.”
+
+## 2) Brand/Positioning Concept (memorable + “crazy” angle)
+- Name idea: “Bali Nail Nomads” (tagline: “We bring the spa to your villa.”)
+- Visual vibe: Tropical luxe + neon accents; fast-book CTA buttons; playful copy.
+- Unique hook: “30-minute arrival windows,” “Bring-the-bar cart” add-on, “Group glam kits,” “After-surf foot rescue,” “Bride & Babes” packages.
+- Social proof: Live IG/TikTok feed of today’s sets; map pings of “We’re pampering in Canggu right now.”
+
+## 3) Site Architecture (SEO-first, clear booking funnel)
+- Core nav: Home | Services & Pricing | Areas We Serve | Book Now | Lookbook | Hygiene | FAQ | About | Contact/WhatsApp
+- Supporting hubs:
+  - Service category pages: Manicure (gel/BIAB/Russian), Pedicure (spa/callus), Nail Art, Acrylic/BIAB, Bridal/Groups, After-Surf Foot Rescue.
+  - Location landing pages: Seminyak, Canggu, Ubud, Kuta/Legian, Uluwatu, Nusa Dua, Sanur.
+  - Blog/Guides: trends, how-tos, pricing insights, hygiene standards, bridal guides.
+
+## 4) Page-by-Page Outline (with keyword targets & CTAs)
+
+### Home (targets: mobile nail salon Bali, home service manicure Bali)
+- Hero: “Luxury mobile nails in Bali—at your villa, hotel, or home.” CTA: Book Now + WhatsApp.
+- Trust: Hygiene badges, top products (gel/BIAB), licensed techs.
+- Snap “Choose your area” chips (Seminyak, Canggu, Ubud, etc.) → location pages.
+- Top services grid with from-prices.
+- Live social proof strip (IG/TikTok embeds, reviews).
+- Explainer: “How it works” (Book → We travel → Glow).
+- Secondary CTA: “Plan a bridal/bachelorette glam.”
+
+### Services & Pricing (targets: gel manicure Bali, pedicure at home Bali)
+- Packages with transparent pricing; upsells: nail art tiers, callus treatment, paraffin.
+- Add-ons: “After-surf foot rescue,” “Bride & Babes,” “Express 45-min set.”
+- FAQ snippets on durability in humidity, product brands, hygiene.
+- CTA every fold: Book Now + WhatsApp.
+
+### Individual Service Pages (each optimized for long-tail)
+- Gel Manicure, BIAB Nails, Russian Manicure, Spa Pedicure, Callus Removal, Nail Art, Acrylic/Extensions, Bridal/Groups, After-Surf Foot Rescue.
+- Each page: hero + benefit bullets + what’s included + duration + price + care tips + gallery + CTA.
+
+### Areas We Serve (hub) + Location Landing Pages
+- Hub page lists all areas with quick CTAs.
+- Each location page (e.g., “Mobile Nail Salon in Seminyak”):
+  - Intro keyed to area (villa/hotel scene).
+  - Services available + ETA windows.
+  - Map snippet + neighborhoods covered.
+  - Localized FAQs (parking/entry, late-night).
+  - CTA: Book Now / WhatsApp.
+
+### Lookbook
+- Visual gallery: nail art, before/after, foot spa glow.
+- Filters: style, length, finish, occasion (bridal, party, surf recovery).
+- UGC invites: “Tag #BaliNailNomads.”
+
+### Hygiene
+- Detail instruments, sanitization, single-use items, gloves/masks policy.
+- Certifications/logos of brands.
+- CTA: “Book your safest-at-home manicure.”
+
+### FAQ
+- Pricing, timing, coverage areas, tipping, late-night availability, humidity and gel care, cancellations.
+
+### About
+- Brand story, lead tech credentials, “Why mobile > salon,” sustainability choices.
+
+### Contact
+- Form + WhatsApp deep link + phone.
+- Operating hours + service radius note.
+- CTA: “Book a slot in 60 seconds.”
+
+### Book Now (conversion page)
+- Simple flow: Pick service → Area → Date/time → Address → Add-ons → Payment/Deposit.
+- Sticky summary + trust badges + “Chat on WhatsApp” fallback.
+
+### Blog/Guides
+- Pillars:
+  - “Gel vs BIAB in Bali humidity”
+  - “Best bridal/bachelorette nail looks for Bali weddings”
+  - “After-surf foot recovery routine”
+  - “Top nail art trends in Bali right now”
+  - “Hygiene checklist for mobile nail services”
+  - “Price guide: manicure/pedicure in Bali (2026)”
+- Internal links to services/location pages; CTA banners.
+
+## 5) On-Page SEO Checklist (apply to all pages)
+- Title tags: “Mobile Nail Salon in [Area] | At-Home Manicure & Pedicure Bali”
+- H1: Include primary keyword + “Bali” or area.
+- H2s: service variants (gel, BIAB, nail art, pedicure, callus).
+- Slugs: `/mobile-nail-salon-bali`, `/gel-manicure-bali`, `/mobile-pedicure-seminyak`, `/nail-art-bali`
+- Meta descriptions: 150–160 chars, include “we come to you,” area, CTA.
+- Alt text: style + finish + area (e.g., “gel manicure with palm nail art in Canggu villa”).
+- Internal links: from blog → service pages → booking; location hubs → specific areas.
+- Schema: LocalBusiness + Service + FAQPage + Product (for bookable services with price).
+- NAP consistency: name/phone/WhatsApp/hours across footer, contact, schema.
+- Performance: image compression/WebP, lazy-load gallery, prefetch fonts.
+
+## 6) Technical & UX
+- Fast booking bar sticky on mobile (“Book / WhatsApp”).
+- WhatsApp deep links with prefilled message: “Hi, I’m in [Area], want [Service] on [Date/Time].”
+- Clear service radius + surcharges for far zones.
+- Use bilingual option? You said English only—keep EN primary; optional Bahasa toggle could help locals.
+- PWA-like speed: caching, minimal JS, server-side rendered pages, clean HTML.
+- Analytics: event tracking on CTA clicks, WhatsApp clicks, service selection.
+
+## 7) Conversion Boosters / “Crazy” Add-ons
+- Live “Where we’re serving now” map pings (social proof + urgency).
+- “Nail SOS” 2-hour rush option (premium).
+- “Bride & Babes” on-site mini photo booth filter (fun hook).
+- After-surf foot rescue kit upsell (menthol, callus, hydration).
+- “Night Owl” slots with small surcharge.
+- “Design of the Day” discounted nail art to drive bookings.
+
+## 8) Example Titles/Meta (swap area names)
+- Home Title: “Mobile Nail Salon Bali | At-Home Manicure & Pedicure | Bali Nail Nomads”
+- Home Meta: “Luxury mobile manicures/pedicures in Bali. We come to your villa, hotel, or home. Gel, BIAB, nail art, bridal. Book now—fast WhatsApp support.”
+- Location Title: “Mobile Manicure & Pedicure Seminyak | In-Villa Nail Salon”
+- Service Title: “Gel Manicure Bali (We Come to You) | Long-Wear, Hygienic, Luxe”
+
+## 9) Sample Page Wireframes (copy bones)
+
+**Home (hero snippet)**
+- H1: “Mobile Nail Salon in Bali—We Bring the Spa to You.”
+- Sub: “Gel, BIAB, nail art, spa pedis at your villa/hotel/home across Seminyak, Canggu, Ubud, Uluwatu.”
+- CTAs: [Book Now] [WhatsApp Us]
+- Trust row: “Licensed techs | Hospital-grade hygiene | Premium gel/BIAB | 30–90 min slots”
+- Services tiles: Gel Mani, Spa Pedi, Nail Art, Callus Rescue, Bridal.
+- Area selector chips.
+- “How it works” 3-step.
+- Social proof carousel + “We’re currently in: Canggu ✦ Uluwatu ✦ Seminyak” strip.
+- CTA banner to Book.
+
+**Services & Pricing (snippet)**
+- H1: “Manicure & Pedicure at Home in Bali”
+- Pricing table with from-prices; nail art tiers; add-ons.
+- Hygiene note + brands.
+- CTA buttons every section.
+
+**Location page (Seminyak example)**
+- H1: “Mobile Nail Salon in Seminyak—We Come to Your Villa”
+- Copy: “Serving Seminyak, Petitenget, Batu Belig. 30–60 min arrival windows.”
+- Services offered + from-prices.
+- Map snippet; parking/entry tips.
+- CTA: Book + WhatsApp.
+
+**Blog post idea**
+- Title: “Gel vs BIAB in Bali Humidity: Which Lasts Longer at the Beach?”
+- Internal links to Gel, BIAB, After-Surf pages; CTA to Book.
+
+## 10) Launch Checklist
+- Implement LocalBusiness + Service + FAQ schema.
+- Unique, localized copy per area page (no duplicates).
+- Compress images; use descriptive alts; lazy-load galleries.
+- Clear above-the-fold CTA + WhatsApp.
+- Track conversions (form submit, WhatsApp click, Book click).
+- Submit sitemap.xml; ensure clean robots.txt; set canonical URLs.
+
+---
+
+Use this blueprint to brief your designer/dev or feed into your site builder/CMS. Prioritize Home, Services, Book, and top 4 location pages (Seminyak, Canggu, Ubud, Uluwatu) at launch; add others after you have traction. Let me know if you want me to draft specific page copy blocks next.
