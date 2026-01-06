@@ -3,6 +3,7 @@ import { Link, useLocation } from "wouter";
 import { Menu, X, Instagram } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import { motion } from "framer-motion";
 import scooterIcon from "@assets/generated_images/minimalist_gold_line_art_scooter_icon.png";
 
 export function Navbar() {
@@ -25,7 +26,20 @@ export function Navbar() {
     >
       <div className="container max-w-7xl mx-auto px-4 md:px-8 flex items-center justify-between">
         <Link href="/" className="text-2xl md:text-3xl font-serif font-bold tracking-tight text-foreground hover:opacity-80 transition-opacity flex items-center gap-4 whitespace-nowrap">
-            <img src={scooterIcon} alt="Scooter Logo" className="h-10 w-auto object-contain" />
+            <motion.img 
+              src={scooterIcon} 
+              alt="Scooter Logo" 
+              className="h-14 w-auto object-contain"
+              animate={{ 
+                y: [0, -2, 0],
+                rotate: [0, 1, 0, -1, 0] 
+              }}
+              transition={{ 
+                duration: 2,
+                repeat: Infinity,
+                ease: "easeInOut"
+              }}
+            />
             <span>Private Beauty <span className="text-primary">Salon</span></span>
         </Link>
 
