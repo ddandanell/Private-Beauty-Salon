@@ -22,12 +22,12 @@ This guide will help you deploy the Private Beauty Salon website to Vercel.
 
 ### 2. Configure Build Settings
 
-Vercel should automatically detect the settings from `vercel.json`, but verify:
+Vercel will automatically use the settings from `vercel.json`:
 
-- **Framework Preset:** Vite
-- **Build Command:** `npm run build`
-- **Output Directory:** `dist/public`
-- **Install Command:** `npm install`
+- **Build Command:** `npm run build` (defined in vercel.json)
+- **Output Directory:** `dist/public` (defined in vercel.json)
+- **Install Command:** `npm install` (auto-detected)
+- **Framework Preset:** None (we use custom configuration)
 
 ### 3. Environment Variables
 
@@ -45,11 +45,12 @@ Click "Deploy" and Vercel will:
 
 The project includes a `vercel.json` file with optimized settings:
 
-- **Framework:** Vite (auto-detected)
-- **API Routes:** `/api/*` requests are routed to the serverless API
-- **Static Assets:** Cached with optimal headers
-- **Clean URLs:** Enabled
-- **Trailing Slashes:** Disabled
+- **Build Command:** `npm run build` - Builds both client (Vite) and server (esbuild)
+- **Output Directory:** `dist/public` - Static files served from here
+- **API Routes:** `/api/*` requests are routed to the serverless API function
+- **SPA Routing:** Catch-all rewrite `/(.*) -> /index.html` for client-side routing
+- **Static Assets:** Cached with optimal headers (assets, images)
+- **Headers:** Cache-Control headers for performance optimization
 
 ## Post-Deployment Checklist
 
@@ -65,6 +66,13 @@ After deployment, verify:
 - [x] WhatsApp button links work
 
 ## Troubleshooting
+
+### Site Downloads a File Instead of Loading
+
+**Fixed!** If you encountered this issue, it was caused by missing SPA routing configuration in `vercel.json`. The fix includes:
+- Added catch-all rewrite rule `/(.*) -> /index.html`
+- Explicitly defined `buildCommand` and `outputDirectory`
+- Proper ordering of rewrites (API routes first, then catch-all)
 
 ### Build Fails
 
@@ -84,7 +92,7 @@ If images don't appear:
 
 If `/api/*` routes fail:
 - Check `api/index.ts` is properly configured
-- Verify `vercel.json` rewrites are correct
+- Verify `vercel.json` rewrites are correct (API routes should be before catch-all)
 - Check Vercel function logs
 
 ### Hero Section Issues
