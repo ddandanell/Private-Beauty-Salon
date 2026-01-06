@@ -8,7 +8,7 @@ interface PageHeroProps {
 
 export function PageHero({ title, subtitle, image }: PageHeroProps) {
   return (
-    <div className="relative h-[60vh] min-h-[500px] flex items-center justify-center overflow-hidden">
+    <div className="relative h-[40vh] min-h-[400px] md:h-[60vh] md:min-h-[500px] flex items-center justify-center overflow-hidden">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <img
@@ -28,10 +28,10 @@ export function PageHero({ title, subtitle, image }: PageHeroProps) {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="max-w-4xl mx-auto"
         >
-          <h1 className="text-4xl md:text-5xl font-serif font-bold text-white mb-6 leading-tight drop-shadow-lg">
+          <h1 className="text-3xl md:text-5xl font-serif font-bold text-white mb-4 md:mb-6 leading-tight drop-shadow-lg">
             {title}
           </h1>
-          <p className="text-xl md:text-2xl text-white/90 font-medium max-w-2xl mx-auto leading-relaxed drop-shadow-md">
+          <p className="text-lg md:text-2xl text-white/90 font-medium max-w-2xl mx-auto leading-relaxed drop-shadow-md">
             {subtitle}
           </p>
         </motion.div>

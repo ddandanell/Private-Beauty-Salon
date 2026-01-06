@@ -7,12 +7,12 @@ const locations = [
 
 export function LocationStrip() {
   return (
-    <div className="w-full bg-secondary py-12 overflow-hidden">
+    <div className="w-full bg-secondary py-8 md:py-12 overflow-hidden">
       <div className="container mx-auto px-4 mb-6 text-center">
-        <p className="text-secondary-foreground/80 font-medium uppercase tracking-widest text-sm mb-2">
+        <p className="text-secondary-foreground/80 font-medium uppercase tracking-widest text-xs md:text-sm mb-2">
           We Come To You
         </p>
-        <h3 className="text-2xl font-serif font-bold text-white">
+        <h3 className="text-xl md:text-2xl font-serif font-bold text-white">
           Available Across Bali's Best Neighborhoods
         </h3>
       </div>

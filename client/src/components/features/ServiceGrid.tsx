@@ -45,11 +45,11 @@ const services = [
 
 export function ServiceGrid() {
   return (
-    <section className="py-20 bg-background relative overflow-hidden">
+    <section className="py-12 md:py-20 bg-background relative overflow-hidden">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
+        <div className="text-center mb-8 md:mb-16">
           <h2 className="text-3xl md:text-5xl font-serif font-bold mb-4">Our Services</h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
+          <p className="text-muted-foreground max-w-2xl mx-auto text-base md:text-lg">
             We bring the full salon experience to you. All services include hospital-grade sterilization and premium imported products.
           </p>
         </div>

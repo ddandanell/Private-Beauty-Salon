@@ -28,9 +28,9 @@ export default function About() {
         />
 
         {/* The Origin Story */}
-        <section className="py-20">
+        <section className="py-12 md:py-20">
           <div className="container mx-auto px-4">
-            <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
               <div className="relative">
                 <div className="absolute -inset-4 bg-secondary/10 rounded-3xl transform -rotate-3"></div>
                 <img 
@@ -40,17 +40,17 @@ export default function About() {
                 />
               </div>
               <div className="space-y-6">
-                <h2 className="text-3xl md:text-5xl font-serif font-bold text-slate-900">
+                <h2 className="text-3xl md:text-5xl font-serif font-bold text-slate-900 leading-tight">
                   Started From A Scooter
                 </h2>
-                <div className="prose prose-lg text-slate-600">
+                <div className="prose prose-lg text-slate-600 text-sm md:text-base">
                   <p>
                     Picture this: 2016. One beat-up Scoopy. One oversized kit bag. And a refusal to compromise on quality. While others were cutting corners with cheap acrylics in dark salons, we were dodging potholes in Canggu to bring <strong>5-star luxury</strong> directly to your villa.
                   </p>
                   <p>
                     They called us crazy. "You can't do high-end art on a coffee table," they said. "The humidity will ruin the gel," they warned.
                   </p>
-                  <p className="font-bold text-slate-900 text-xl">
+                  <p className="font-bold text-slate-900 text-lg md:text-xl">
                     We proved them all wrong.
                   </p>
                   <p>
@@ -63,24 +63,24 @@ export default function About() {
         </section>
 
         {/* The Expertise / "We Know What We're Doing" */}
-        <section className="py-24 bg-slate-900 text-white relative overflow-hidden">
+        <section className="py-12 md:py-24 bg-slate-900 text-white relative overflow-hidden">
           <div className="absolute top-0 right-0 w-1/2 h-full bg-primary/5 skew-x-12 transform origin-top"></div>
           
           <div className="container mx-auto px-4 relative z-10">
-            <div className="grid md:grid-cols-2 gap-16 items-center">
+            <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-center">
               <div className="order-2 md:order-1 space-y-8">
-                <h2 className="text-3xl md:text-5xl font-serif font-bold text-white mb-6">
+                <h2 className="text-3xl md:text-5xl font-serif font-bold text-white mb-6 leading-tight">
                   We Don't Hire Techs. <br/>
                   <span className="text-primary">We Train Masters.</span>
                 </h2>
                 <div className="space-y-6">
                   <div className="flex gap-4 items-start">
                     <div className="bg-white/10 p-3 rounded-xl text-primary">
-                      <GraduationCap className="w-8 h-8" />
+                      <GraduationCap className="w-6 h-6 md:w-8 md:h-8" />
                     </div>
                     <div>
-                      <h3 className="text-xl font-bold mb-2">The "Nomad Academy" Standard</h3>
-                      <p className="text-white/70">
+                      <h3 className="text-lg md:text-xl font-bold mb-2">The "Nomad Academy" Standard</h3>
+                      <p className="text-white/70 text-sm md:text-base">
                         Every tech goes through our rigorous 3-month bootcamp. We don't care if they have 5 years experience elsewhere—if they can't paint a french tip with their eyes closed, they don't wear our uniform.
                       </p>
                     </div>
@@ -88,11 +88,11 @@ export default function About() {
                   
                   <div className="flex gap-4 items-start">
                     <div className="bg-white/10 p-3 rounded-xl text-primary">
-                      <ShieldCheck className="w-8 h-8" />
+                      <ShieldCheck className="w-6 h-6 md:w-8 md:h-8" />
                     </div>
                     <div>
-                      <h3 className="text-xl font-bold mb-2">Certified & Sanitized</h3>
-                      <p className="text-white/70">
+                      <h3 className="text-lg md:text-xl font-bold mb-2">Certified & Sanitized</h3>
+                      <p className="text-white/70 text-sm md:text-base">
                         We hold international certifications in hygiene and chemical safety. We know exactly what's in our bottles and why it matters. No mystery powders. No dodgy drills.
                       </p>
                     </div>
@@ -100,11 +100,11 @@ export default function About() {
 
                   <div className="flex gap-4 items-start">
                     <div className="bg-white/10 p-3 rounded-xl text-primary">
-                      <Zap className="w-8 h-8" />
+                      <Zap className="w-6 h-6 md:w-8 md:h-8" />
                     </div>
                     <div>
-                      <h3 className="text-xl font-bold mb-2">10 Years of "Oops-Proof" Experience</h3>
-                      <p className="text-white/70">
+                      <h3 className="text-lg md:text-xl font-bold mb-2">10 Years of "Oops-Proof" Experience</h3>
+                      <p className="text-white/70 text-sm md:text-base">
                         Spilled champagne? Power cut at the villa? Dog jumped on your lap? We've seen it all. Our hands are steady even when the Bali chaos isn't.
                       </p>
                     </div>
@@ -113,10 +113,10 @@ export default function About() {
               </div>
               
               <div className="order-1 md:order-2">
-                 <div className="relative rounded-2xl overflow-hidden border-4 border-white/10 shadow-2xl">
+                 <div className="relative rounded-2xl overflow-hidden border-4 border-white/10 shadow-2xl h-[300px] md:h-auto">
                     <img src={expertImg} alt="Master Class Training" className="w-full h-full object-cover" />
-                    <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/90 to-transparent p-8">
-                        <p className="font-serif italic text-xl">"Perfection isn't an accident. It's practice."</p>
+                    <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/90 to-transparent p-6 md:p-8">
+                        <p className="font-serif italic text-lg md:text-xl">"Perfection isn't an accident. It's practice."</p>
                     </div>
                  </div>
               </div>
@@ -125,20 +125,20 @@ export default function About() {
         </section>
 
         {/* The Team Vibe */}
-        <section className="py-24">
+        <section className="py-12 md:py-24">
           <div className="container mx-auto px-4 text-center">
-            <h2 className="text-3xl md:text-5xl font-serif font-bold mb-16">Meet The Squad</h2>
+            <h2 className="text-3xl md:text-5xl font-serif font-bold mb-10 md:mb-16">Meet The Squad</h2>
             
-            <div className="relative max-w-5xl mx-auto mb-16 group">
+            <div className="relative max-w-5xl mx-auto mb-10 md:mb-16 group">
                 <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-purple-500/20 rounded-3xl transform rotate-1 transition-transform group-hover:rotate-0 duration-500"></div>
                 <img 
                     src={teamImg} 
                     alt="The Private Beauty Salon Team" 
-                    className="relative rounded-2xl shadow-xl w-full object-cover"
+                    className="relative rounded-2xl shadow-xl w-full object-cover aspect-video"
                 />
             </div>
 
-            <div className="grid md:grid-cols-3 gap-8 text-left max-w-4xl mx-auto">
+            <div className="grid md:grid-cols-3 gap-6 md:gap-8 text-left max-w-4xl mx-auto">
                 <div className="bg-slate-50 p-6 rounded-xl border border-slate-100">
                     <div className="flex items-center gap-3 mb-4">
                         <div className="w-12 h-12 bg-slate-200 rounded-full overflow-hidden">
@@ -179,10 +179,10 @@ export default function About() {
                 </div>
             </div>
 
-             <div className="mt-20">
-                <h3 className="text-2xl font-bold mb-6">Ready to see what 10 years of obsession looks like?</h3>
+             <div className="mt-12 md:mt-20">
+                <h3 className="text-xl md:text-2xl font-bold mb-6">Ready to see what 10 years of obsession looks like?</h3>
                 <Link href="/book">
-                    <Button size="lg" className="rounded-full px-12 h-16 text-lg shadow-xl shadow-primary/30 hover:shadow-primary/50 hover:scale-105 transition-all">
+                    <Button size="lg" className="rounded-full px-10 py-3 h-auto md:px-12 md:h-16 text-lg shadow-xl shadow-primary/30 hover:shadow-primary/50 hover:scale-105 transition-all w-full md:w-auto">
                         Book An Appointment
                     </Button>
                 </Link>
