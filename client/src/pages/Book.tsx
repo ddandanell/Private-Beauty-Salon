@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "wouter";
 import { motion, AnimatePresence } from "framer-motion";
-import { ArrowLeft, Check, Calendar, MapPin, Sparkles, Clock } from "lucide-react";
+import { ArrowLeft, Check, Calendar, MapPin, Sparkles, Clock, ShieldCheck } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
@@ -10,6 +10,7 @@ import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { cn } from "@/lib/utils";
+import certBanner from "@assets/generated_images/professional_nail_brand_certification_logos_banner.png";
 
 const services = [
   { id: "gel-mani", name: "Gel Manicure", price: "350k", duration: "60m" },
@@ -44,6 +45,15 @@ export default function Book() {
 
   const nextStep = () => setStep(prev => prev + 1);
   const prevStep = () => setStep(prev => prev - 1);
+
+  const confirmBooking = () => {
+    const serviceName = services.find(s => s.id === booking.service)?.name;
+    
+    const message = `Hi Private Beauty Salon! 🌸%0AI'd like to book an appointment.%0A%0A*Service:* ${serviceName}%0A*Location:* ${booking.location}%0A*Date:* ${booking.date}%0A*Time:* ${booking.time}%0A*Name:* ${booking.name}%0A%0APlease confirm if this slot is available! ✨`;
+    
+    // Using the dummy number provided in the original code, can be updated if needed
+    window.open(`https://wa.me/6281234567890?text=${message}`, '_blank');
+  };
 
   const steps = [
     { num: 1, title: "Service" },
@@ -80,7 +90,7 @@ export default function Book() {
           </div>
         </div>
 
-        <Card className="border-0 shadow-xl overflow-hidden">
+        <Card className="border-0 shadow-xl overflow-hidden mb-12">
           <CardContent className="p-0">
             <AnimatePresence mode="wait">
               {step === 1 && (
@@ -237,11 +247,11 @@ export default function Book() {
                   <div className="mt-8 flex justify-between">
                     <Button variant="ghost" onClick={prevStep}>Back</Button>
                     <Button 
-                      className="w-full ml-4" 
+                      className="w-full ml-4 bg-[#25D366] hover:bg-[#20bd5a] text-white font-bold shadow-lg shadow-green-200" 
                       disabled={!booking.name || !booking.whatsapp}
-                      onClick={() => alert(`Booking Request Sent!\n\nWe will contact you on WhatsApp at ${booking.whatsapp} to confirm your ${booking.location} appointment.`)}
+                      onClick={confirmBooking}
                     >
-                      Confirm Booking
+                      Complete on WhatsApp
                     </Button>
                   </div>
                 </motion.div>
@@ -249,6 +259,26 @@ export default function Book() {
             </AnimatePresence>
           </CardContent>
         </Card>
+
+        {/* Trust & Certifications Section */}
+        <div className="space-y-8 text-center">
+            <div className="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm">
+                <h3 className="text-sm font-bold uppercase tracking-widest text-muted-foreground mb-4">Official Partners & Certifications</h3>
+                <img src={certBanner} alt="Certified by CND, OPI, The Gel Bottle" className="w-full h-auto max-w-md mx-auto" />
+            </div>
+
+            <div className="flex flex-col md:flex-row justify-center items-center gap-6 text-sm text-muted-foreground">
+                <div className="flex items-center gap-2">
+                    <MapPin className="w-4 h-4 text-primary" />
+                    <span>Headquarters: Jl. Raya Kuta No. 45, Kuta, Bali 80361</span>
+                </div>
+                <div className="hidden md:block w-1 h-1 bg-slate-300 rounded-full" />
+                <div className="flex items-center gap-2">
+                    <ShieldCheck className="w-4 h-4 text-primary" />
+                    <span>Licensed Mobile Spa #8821-B</span>
+                </div>
+            </div>
+        </div>
       </main>
 
       <Footer />
