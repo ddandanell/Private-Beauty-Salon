@@ -1,4 +1,8 @@
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import useEmblaCarousel from "embla-carousel-react";
+import AutoScroll from "embla-carousel-auto-scroll";
+import { Star } from "lucide-react";
+import { useEffect, useState } from "react";
 
 const reviews = [
   {
@@ -21,14 +25,46 @@ const reviews = [
     text: "Hygiene is top notch. Sterilized tools in sealed bags. Felt super safe and clean.",
     rating: 5,
     avatar: "https://i.pravatar.cc/150?u=jess"
+  },
+  {
+    name: "Emma Wilson",
+    handle: "@emma_eats",
+    text: "My gel lasted 4 weeks without a single chip. The nail art was exactly like the photo I showed.",
+    rating: 5,
+    avatar: "https://i.pravatar.cc/150?u=emma"
+  },
+  {
+    name: "Bali Villa Escapes",
+    handle: "@balivilla",
+    text: "We exclusively recommend Private Beauty Salon to all our VIP guests. Simply the best mobile service.",
+    rating: 5,
+    avatar: "https://i.pravatar.cc/150?u=villa"
+  },
+  {
+    name: "Michelle Tan",
+    handle: "@michelletan",
+    text: "Convenience is unmatched. Having a pedi while looking at my private pool view? Yes please.",
+    rating: 5,
+    avatar: "https://i.pravatar.cc/150?u=michelle"
+  },
+  {
+    name: "Sophie Anderson",
+    handle: "@sophie_a",
+    text: "They fixed a botched job I got at a street salon. My natural nails are finally healthy again.",
+    rating: 5,
+    avatar: "https://i.pravatar.cc/150?u=sophie"
   }
 ];
 
 export function TestimonialStrip() {
+  const [emblaRef] = useEmblaCarousel({ loop: true }, [
+    AutoScroll({ speed: 1, stopOnInteraction: false, stopOnMouseEnter: true })
+  ]);
+
   return (
-    <section className="py-20 bg-muted/30">
-      <div className="container mx-auto px-4">
-        <div className="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
+    <section className="py-20 bg-muted/30 overflow-hidden">
+      <div className="container mx-auto px-4 mb-12">
+        <div className="flex flex-col md:flex-row justify-between items-end gap-6">
           <div>
             <h2 className="text-3xl font-serif font-bold mb-4">Vibe Check</h2>
             <p className="text-muted-foreground">Join 2,000+ happy clients glowing across the island.</p>
@@ -45,27 +81,34 @@ export function TestimonialStrip() {
             </div>
           </div>
         </div>
+      </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div className="relative" ref={emblaRef}>
+        <div className="flex touch-pan-y gap-6 ml-4">
           {reviews.map((review, i) => (
-            <div key={i} className="bg-background p-6 rounded-2xl shadow-sm border border-border/50">
-              <div className="flex items-center gap-3 mb-4">
-                <Avatar>
-                  <AvatarImage src={review.avatar} />
-                  <AvatarFallback>{review.name[0]}</AvatarFallback>
-                </Avatar>
+            <div 
+              key={i} 
+              className="flex-[0_0_300px] md:flex-[0_0_400px] min-w-0 relative"
+            >
+              <div className="bg-background p-6 rounded-2xl shadow-sm border border-border/50 h-full flex flex-col justify-between select-none">
                 <div>
-                  <div className="font-bold text-sm">{review.name}</div>
-                  <div className="text-xs text-muted-foreground">{review.handle}</div>
+                  <div className="flex items-center gap-3 mb-4">
+                    <Avatar>
+                      <AvatarImage src={review.avatar} />
+                      <AvatarFallback>{review.name[0]}</AvatarFallback>
+                    </Avatar>
+                    <div>
+                      <div className="font-bold text-sm">{review.name}</div>
+                      <div className="text-xs text-muted-foreground">{review.handle}</div>
+                    </div>
+                  </div>
+                  <p className="text-slate-700 italic mb-4">"{review.text}"</p>
                 </div>
-              </div>
-              <p className="text-slate-700 italic mb-4">"{review.text}"</p>
-              <div className="flex text-primary">
-                {[...Array(review.rating)].map((_, j) => (
-                  <svg key={j} className="w-4 h-4 fill-current" viewBox="0 0 20 20">
-                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                  </svg>
-                ))}
+                <div className="flex text-primary">
+                  {[...Array(review.rating)].map((_, j) => (
+                    <Star key={j} className="w-4 h-4 fill-current text-primary" />
+                  ))}
+                </div>
               </div>
             </div>
           ))}
