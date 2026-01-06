@@ -6,6 +6,7 @@ import { Link } from "wouter";
 
 import maniImg from "@assets/generated_images/gel_manicure_with_tropical_vibe.png";
 import pediImg from "@assets/generated_images/luxury_foot_spa_pedicure_in_bali.png";
+import nailArtImg from "@assets/generated_images/elegant_modern_french_tip_nails_with_chrome_accent.png";
 
 const services = [
   {
@@ -29,7 +30,7 @@ const services = [
     price: "+100k",
     desc: "Simple designs, french tips, chrome, or ombré on all nails.",
     icon: Palette,
-    image: "https://images.unsplash.com/photo-1632973547754-4331dd77e8d0?auto=format&fit=crop&q=80&w=800",
+    image: nailArtImg,
     popular: false,
   },
   {
