@@ -6,7 +6,7 @@ import { Badge } from "@/components/ui/badge";
 import { Link } from "wouter";
 import { Trophy, GraduationCap, Users, Heart, ShieldCheck, Zap } from "lucide-react";
 
-import teamImg from "@assets/generated_images/stylish_balinese_nail_tech_team_in_villa.png";
+import teamImg from "@assets/generated_images/stylish_balinese_nail_team_with_male_center_lead.png";
 import scooterImg from "@assets/generated_images/nail_tech_on_scooter_in_bali_rice_fields.png";
 import expertImg from "@assets/generated_images/master_nail_tech_teaching_precise_application.png";
 
