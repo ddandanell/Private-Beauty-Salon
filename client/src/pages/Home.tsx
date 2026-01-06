@@ -5,6 +5,7 @@ import { LocationStrip } from "@/components/features/LocationStrip";
 import { TestimonialStrip } from "@/components/features/TestimonialStrip";
 import { WhatsAppButton } from "@/components/ui/WhatsAppButton";
 import { Footer } from "@/components/layout/Footer";
+import hygieneImg from "@assets/generated_images/sterilized_nail_tools_in_sealed_pouch_on_marble.png";
 
 export default function Home() {
   return (
@@ -22,7 +23,7 @@ export default function Home() {
             <div className="order-2 md:order-1 relative">
               <div className="absolute inset-0 bg-primary/20 rounded-3xl transform rotate-3 blur-2xl" />
               <img 
-                src="https://images.unsplash.com/photo-1519014816548-bf5fe059e98b?auto=format&fit=crop&q=80&w=800" 
+                src={hygieneImg}
                 alt="Hygiene Standards" 
                 className="relative rounded-3xl shadow-2xl z-10"
               />
