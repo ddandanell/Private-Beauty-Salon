@@ -7,7 +7,9 @@ import { Input } from "@/components/ui/input";
 import { Badge } from "@/components/ui/badge";
 import { Search, MapPin, Car, CheckCircle2, Info } from "lucide-react";
 import { Link } from "wouter";
+import { PageHero } from "@/components/layout/PageHero";
 import mapImg from "@assets/generated_images/stylized_minimal_map_of_bali_service_zones.png";
+import heroImg from "@assets/generated_images/scenic_bali_rice_terrace_drive.png";
 
 const locations = [
   // Free Zone (Canggu/Seminyak Hub)
@@ -55,16 +57,14 @@ export default function Areas() {
     <div className="min-h-screen bg-background font-sans">
       <Navbar />
 
-      <main className="pt-24 pb-20">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-             <span className="text-primary font-bold tracking-widest uppercase text-sm mb-4 block">Coverage Map</span>
-             <h1 className="text-4xl md:text-6xl font-serif font-bold text-slate-900 mb-6">Where We Go</h1>
-             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-               From the rice fields of Ubud to the cliffs of Uluwatu. Check your area's transport fee below.
-             </p>
-          </div>
+      <main>
+        <PageHero 
+            title="Coverage & Travel Fees" 
+            subtitle="From the rice fields of Ubud to the cliffs of Uluwatu. Check your area's transport fee below."
+            image={heroImg}
+        />
 
+        <div className="container mx-auto px-4 mt-20">
           <div className="grid lg:grid-cols-2 gap-12 items-start mb-20">
              {/* Map Visual */}
              <div className="bg-slate-50 rounded-3xl p-4 border border-border shadow-lg relative overflow-hidden group">

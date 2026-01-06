@@ -5,10 +5,12 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Link } from "wouter";
 import { Trophy, GraduationCap, Users, Heart, ShieldCheck, Zap } from "lucide-react";
+import { PageHero } from "@/components/layout/PageHero";
 
 import teamImg from "@assets/generated_images/stylish_balinese_nail_team_with_male_center_lead.png";
 import scooterImg from "@assets/generated_images/nail_tech_on_scooter_in_bali_rice_fields.png";
 import expertImg from "@assets/generated_images/master_nail_tech_teaching_precise_application.png";
+import heroImg from "@assets/generated_images/luxury_mobile_beauty_kit_setup.png";
 
 export default function About() {
   return (
@@ -17,25 +19,13 @@ export default function About() {
 
       <main>
         {/* Hero Section */}
-        <section className="relative pt-32 pb-20 overflow-hidden">
-          <div className="absolute inset-0 z-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]"></div>
-          <div className="container mx-auto px-4 relative z-10">
-            <div className="max-w-4xl mx-auto text-center">
-              <Badge className="mb-6 px-4 py-1 text-sm bg-primary/10 text-primary border-primary/20 hover:bg-primary/20 transition-colors">
-                Since 2016
-              </Badge>
-              <h1 className="text-4xl md:text-7xl font-serif font-bold text-slate-900 mb-6 leading-tight">
-                We Didn't Invent Mobile Spa. <br/>
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-amber-600">
-                  We Perfected It.
-                </span>
-              </h1>
-              <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed max-w-2xl mx-auto">
-                10 years. 50,000+ Manicures. One obsession: Being the absolute best nail squad in Bali.
-              </p>
-            </div>
-          </div>
-        </section>
+        <PageHero 
+            title={
+                <span>We Didn't Invent Mobile Spa. <br/><span className="text-primary">We Perfected It.</span></span>
+            }
+            subtitle="10 years. 50,000+ Manicures. One obsession: Being the absolute best nail squad in Bali."
+            image={heroImg}
+        />
 
         {/* The Origin Story */}
         <section className="py-20">

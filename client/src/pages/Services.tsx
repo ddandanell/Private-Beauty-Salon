@@ -6,12 +6,14 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Check, Sparkles, Clock } from "lucide-react";
 import { Link } from "wouter";
+import { PageHero } from "@/components/layout/PageHero";
 
 import bridalImg from "@assets/generated_images/bridal_nail_art_with_lace_details.png";
 import acrylicImg from "@assets/generated_images/professional_acrylic_nail_extension_application.png";
 import artImg from "@assets/generated_images/elegant_modern_french_tip_nails_with_chrome_accent.png";
 import maniImg from "@assets/generated_images/gel_manicure_with_tropical_vibe.png";
 import pediImg from "@assets/generated_images/luxury_foot_spa_pedicure_in_bali.png";
+import heroImg from "@assets/generated_images/premium_nail_polish_display_on_marble.png";
 
 const ServiceCategory = ({ title, items, image, reversed = false }: { title: string, items: any[], image: string, reversed?: boolean }) => (
   <div className={`flex flex-col md:flex-row gap-8 items-center py-12 ${reversed ? 'md:flex-row-reverse' : ''}`}>
@@ -88,19 +90,12 @@ export default function Services() {
     <div className="min-h-screen bg-background font-sans">
       <Navbar />
 
-      <main className="pt-24 pb-20">
-        {/* Header */}
-        <div className="bg-secondary text-white py-20 px-4 relative overflow-hidden">
-            <div className="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]"></div>
-            <div className="container mx-auto text-center relative z-10">
-                <span className="text-primary font-bold tracking-widest uppercase text-sm mb-4 block">Our Menu</span>
-                <h1 className="text-4xl md:text-6xl font-serif font-bold mb-6">Full Service Price List</h1>
-                <p className="text-white/80 max-w-2xl mx-auto text-lg">
-                    Transparent pricing. No hidden transport fees for Seminyak, Canggu & Pererenan. 
-                    <br/><span className="text-sm opacity-70 mt-2 block">(Small surcharge applies for Uluwatu, Ubud & Nusa Dua)</span>
-                </p>
-            </div>
-        </div>
+      <main>
+        <PageHero 
+            title="Our Full Service Menu" 
+            subtitle="Transparent pricing. No hidden fees. Just pure luxury delivered to your door." 
+            image={heroImg}
+        />
 
         <div className="container mx-auto px-4 mt-12">
             <Tabs defaultValue="all" className="w-full mb-12">
