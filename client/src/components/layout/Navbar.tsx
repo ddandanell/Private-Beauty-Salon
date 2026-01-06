@@ -20,51 +20,53 @@ export function Navbar() {
     <nav
       className={cn(
         "fixed top-0 w-full z-50 transition-all duration-300",
-        "bg-white shadow-sm py-4"
+        "bg-white shadow-sm py-5"
       )}
     >
-      <div className="container mx-auto px-4 md:px-6 flex items-center justify-between">
-        <Link href="/" className="text-2xl font-serif font-bold tracking-tight text-foreground hover:opacity-80 transition-opacity flex items-center gap-3">
-            <img src={scooterIcon} alt="Scooter Logo" className="h-8 w-auto object-contain" />
+      <div className="container max-w-7xl mx-auto px-4 md:px-8 flex items-center justify-between">
+        <Link href="/" className="text-2xl md:text-3xl font-serif font-bold tracking-tight text-foreground hover:opacity-80 transition-opacity flex items-center gap-4 whitespace-nowrap">
+            <img src={scooterIcon} alt="Scooter Logo" className="h-10 w-auto object-contain" />
             <span>Private Beauty <span className="text-primary">Salon</span></span>
         </Link>
 
         {/* Desktop Nav */}
-        <div className="hidden md:flex items-center gap-8">
+        <div className="hidden lg:flex items-center gap-10">
           {navLinks.map((link) => (
             <Link 
               key={link.name} 
               href={link.href}
               className={cn(
-                "text-sm font-medium transition-colors hover:text-primary",
+                "text-base font-medium transition-colors hover:text-primary tracking-wide",
                 location === link.href ? "text-primary font-semibold" : "text-foreground"
               )}
             >
                 {link.name}
             </Link>
           ))}
-          <Button variant="outline" size="icon" className="rounded-full border-primary/20 hover:bg-primary/10 hover:text-primary">
-            <Instagram className="h-4 w-4" />
-          </Button>
-          <Link href="/book">
-            <Button className="rounded-full px-6 font-semibold shadow-lg shadow-primary/20 hover:shadow-primary/40 transition-all">
-              Book Now
+          <div className="flex items-center gap-4 ml-4 pl-4 border-l border-border/50">
+            <Button variant="outline" size="icon" className="rounded-full border-primary/20 hover:bg-primary/10 hover:text-primary w-10 h-10">
+                <Instagram className="h-5 w-5" />
             </Button>
-          </Link>
+            <Link href="/book">
+                <Button className="rounded-full px-8 h-10 text-base font-semibold shadow-lg shadow-primary/20 hover:shadow-primary/40 transition-all">
+                Book Now
+                </Button>
+            </Link>
+          </div>
         </div>
 
         {/* Mobile Toggle */}
         <button
-          className="md:hidden text-foreground p-2"
+          className="lg:hidden text-foreground p-2"
           onClick={() => setIsOpen(!isOpen)}
         >
-          {isOpen ? <X /> : <Menu />}
+          {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
         </button>
       </div>
 
       {/* Mobile Nav */}
       {isOpen && (
-        <div className="md:hidden absolute top-full left-0 w-full bg-white border-b border-border shadow-lg animate-in slide-in-from-top-5 duration-200">
+        <div className="lg:hidden absolute top-full left-0 w-full bg-white border-b border-border shadow-lg animate-in slide-in-from-top-5 duration-200">
           <div className="flex flex-col p-4 gap-4">
             {navLinks.map((link) => (
               <Link 
