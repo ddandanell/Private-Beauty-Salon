@@ -5,6 +5,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import Home from "@/pages/Home";
 import Book from "@/pages/Book";
+import Services from "@/pages/Services";
 import NotFound from "@/pages/not-found";
 
 function Router() {
@@ -12,8 +13,7 @@ function Router() {
     <Switch>
       <Route path="/" component={Home} />
       <Route path="/book" component={Book} />
-      {/* Redirects for other pages to Home for now as per MVP */}
-      <Route path="/services" component={Home} /> 
+      <Route path="/services" component={Services} /> 
       <Route path="/areas" component={Home} />
       <Route path="/about" component={Home} />
       <Route component={NotFound} />
