@@ -1,4 +1,5 @@
 import { Link } from "wouter";
+import { Instagram, Facebook, Youtube } from "lucide-react";
 
 export function Footer() {
   return (
@@ -46,10 +47,15 @@ export function Footer() {
               <li>Daily: 9:00 AM - 8:00 PM</li>
             </ul>
             <div className="flex gap-4 mt-6">
-              {/* Social Icons would go here */}
-              <div className="w-8 h-8 rounded-full bg-slate-200" />
-              <div className="w-8 h-8 rounded-full bg-slate-200" />
-              <div className="w-8 h-8 rounded-full bg-slate-200" />
+              <a href="https://instagram.com" target="_blank" rel="noreferrer" className="w-10 h-10 rounded-full bg-slate-200 flex items-center justify-center text-slate-600 hover:bg-primary hover:text-white transition-colors">
+                <Instagram className="w-5 h-5" />
+              </a>
+              <a href="https://facebook.com" target="_blank" rel="noreferrer" className="w-10 h-10 rounded-full bg-slate-200 flex items-center justify-center text-slate-600 hover:bg-primary hover:text-white transition-colors">
+                <Facebook className="w-5 h-5" />
+              </a>
+              <a href="https://youtube.com" target="_blank" rel="noreferrer" className="w-10 h-10 rounded-full bg-slate-200 flex items-center justify-center text-slate-600 hover:bg-primary hover:text-white transition-colors">
+                <Youtube className="w-5 h-5" />
+              </a>
             </div>
           </div>
         </div>
