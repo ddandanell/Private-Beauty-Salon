@@ -1,5 +1,6 @@
 import { Link } from "wouter";
 import { Instagram, Facebook, Youtube } from "lucide-react";
+import scooterIcon from "@assets/generated_images/minimalist_gold_line_art_scooter_icon.png";
 
 export function Footer() {
   return (
@@ -8,8 +9,9 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
           <div className="space-y-4">
             <Link href="/">
-              <a className="text-2xl font-serif font-bold text-foreground">
-                Private Beauty <span className="text-primary">Salon</span>
+              <a className="text-2xl font-serif font-bold text-foreground flex items-center gap-3">
+                <img src={scooterIcon} alt="Scooter Logo" className="h-8 w-auto object-contain" />
+                <span>Private Beauty <span className="text-primary">Salon</span></span>
               </a>
             </Link>
             <p className="text-muted-foreground text-sm leading-relaxed">

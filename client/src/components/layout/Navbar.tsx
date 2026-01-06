@@ -3,6 +3,7 @@ import { Link, useLocation } from "wouter";
 import { Menu, X, Instagram } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import scooterIcon from "@assets/generated_images/minimalist_gold_line_art_scooter_icon.png";
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,8 +25,9 @@ export function Navbar() {
     >
       <div className="container mx-auto px-4 md:px-6 flex items-center justify-between">
         <Link href="/">
-          <a className="text-2xl font-serif font-bold tracking-tight text-foreground hover:opacity-80 transition-opacity">
-            Private Beauty <span className="text-primary">Salon</span>
+          <a className="text-2xl font-serif font-bold tracking-tight text-foreground hover:opacity-80 transition-opacity flex items-center gap-3">
+            <img src={scooterIcon} alt="Scooter Logo" className="h-8 w-auto object-contain" />
+            <span>Private Beauty <span className="text-primary">Salon</span></span>
           </a>
         </Link>
 
