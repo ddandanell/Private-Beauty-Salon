@@ -51,4 +51,19 @@ This will generate a `dist` folder containing the compiled assets.
 
 ## Deployment
 
-The project is ready for deployment. Ensure you set the necessary environment variables (e.g., `DATABASE_URL` if using a database) in your deployment environment.
+The project is optimized for deployment on [Vercel](https://vercel.com/). 
+
+### Quick Deploy to Vercel
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new)
+
+1. Click the button above or go to [Vercel Dashboard](https://vercel.com/dashboard)
+2. Import your GitHub repository
+3. Vercel will auto-detect settings from `vercel.json`
+4. Click "Deploy"
+
+For detailed deployment instructions, see [DEPLOYMENT.md](./DEPLOYMENT.md).
+
+### Environment Variables
+
+No environment variables are required for basic functionality. The current implementation uses in-memory storage.
