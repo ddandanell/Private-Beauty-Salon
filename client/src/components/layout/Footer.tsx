@@ -8,11 +8,9 @@ export function Footer() {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
           <div className="space-y-4">
-            <Link href="/">
-              <a className="text-2xl font-serif font-bold text-foreground flex items-center gap-3">
+            <Link href="/" className="text-2xl font-serif font-bold text-foreground flex items-center gap-3">
                 <img src={scooterIcon} alt="Scooter Logo" className="h-8 w-auto object-contain" />
                 <span>Private Beauty <span className="text-primary">Salon</span></span>
-              </a>
             </Link>
             <p className="text-muted-foreground text-sm leading-relaxed">
               Bali's premier mobile nail salon. We bring luxury spa services directly to your villa, hotel, or home.
@@ -22,22 +20,22 @@ export function Footer() {
           <div>
             <h4 className="font-bold mb-4 text-slate-900">Services</h4>
             <ul className="space-y-2 text-sm text-muted-foreground">
-              <li><Link href="/services"><a className="hover:text-primary">Gel Manicure</a></Link></li>
-              <li><Link href="/services"><a className="hover:text-primary">Spa Pedicure</a></Link></li>
-              <li><Link href="/services"><a className="hover:text-primary">BIAB Nails</a></Link></li>
-              <li><Link href="/services"><a className="hover:text-primary">Bridal Packages</a></Link></li>
-              <li><Link href="/services"><a className="hover:text-primary">Group Bookings</a></Link></li>
+              <li><Link href="/services" className="hover:text-primary">Gel Manicure</Link></li>
+              <li><Link href="/services" className="hover:text-primary">Spa Pedicure</Link></li>
+              <li><Link href="/services" className="hover:text-primary">BIAB Nails</Link></li>
+              <li><Link href="/services" className="hover:text-primary">Bridal Packages</Link></li>
+              <li><Link href="/services" className="hover:text-primary">Group Bookings</Link></li>
             </ul>
           </div>
 
           <div>
             <h4 className="font-bold mb-4 text-slate-900">Areas</h4>
             <ul className="space-y-2 text-sm text-muted-foreground">
-              <li><Link href="/areas"><a className="hover:text-primary">Seminyak</a></Link></li>
-              <li><Link href="/areas"><a className="hover:text-primary">Canggu & Pererenan</a></Link></li>
-              <li><Link href="/areas"><a className="hover:text-primary">Ubud</a></Link></li>
-              <li><Link href="/areas"><a className="hover:text-primary">Uluwatu</a></Link></li>
-              <li><Link href="/areas"><a className="hover:text-primary">Nusa Dua</a></Link></li>
+              <li><Link href="/areas" className="hover:text-primary">Seminyak</Link></li>
+              <li><Link href="/areas" className="hover:text-primary">Canggu & Pererenan</Link></li>
+              <li><Link href="/areas" className="hover:text-primary">Ubud</Link></li>
+              <li><Link href="/areas" className="hover:text-primary">Uluwatu</Link></li>
+              <li><Link href="/areas" className="hover:text-primary">Nusa Dua</Link></li>
             </ul>
           </div>
 

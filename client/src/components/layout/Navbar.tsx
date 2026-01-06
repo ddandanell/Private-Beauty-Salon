@@ -24,25 +24,23 @@ export function Navbar() {
       )}
     >
       <div className="container mx-auto px-4 md:px-6 flex items-center justify-between">
-        <Link href="/">
-          <a className="text-2xl font-serif font-bold tracking-tight text-foreground hover:opacity-80 transition-opacity flex items-center gap-3">
+        <Link href="/" className="text-2xl font-serif font-bold tracking-tight text-foreground hover:opacity-80 transition-opacity flex items-center gap-3">
             <img src={scooterIcon} alt="Scooter Logo" className="h-8 w-auto object-contain" />
             <span>Private Beauty <span className="text-primary">Salon</span></span>
-          </a>
         </Link>
 
         {/* Desktop Nav */}
         <div className="hidden md:flex items-center gap-8">
           {navLinks.map((link) => (
-            <Link key={link.name} href={link.href}>
-              <a
-                className={cn(
-                  "text-sm font-medium transition-colors hover:text-primary",
-                  location === link.href ? "text-primary font-semibold" : "text-foreground"
-                )}
-              >
+            <Link 
+              key={link.name} 
+              href={link.href}
+              className={cn(
+                "text-sm font-medium transition-colors hover:text-primary",
+                location === link.href ? "text-primary font-semibold" : "text-foreground"
+              )}
+            >
                 {link.name}
-              </a>
             </Link>
           ))}
           <Button variant="outline" size="icon" className="rounded-full border-primary/20 hover:bg-primary/10 hover:text-primary">
@@ -69,13 +67,13 @@ export function Navbar() {
         <div className="md:hidden absolute top-full left-0 w-full bg-white border-b border-border shadow-lg animate-in slide-in-from-top-5 duration-200">
           <div className="flex flex-col p-4 gap-4">
             {navLinks.map((link) => (
-              <Link key={link.name} href={link.href}>
-                <a
-                  className="text-lg font-medium p-2 hover:bg-accent rounded-md text-foreground"
-                  onClick={() => setIsOpen(false)}
-                >
+              <Link 
+                key={link.name} 
+                href={link.href}
+                className="text-lg font-medium p-2 hover:bg-accent rounded-md text-foreground"
+                onClick={() => setIsOpen(false)}
+              >
                   {link.name}
-                </a>
               </Link>
             ))}
             <Link href="/book">
