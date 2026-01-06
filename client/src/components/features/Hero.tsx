@@ -30,7 +30,7 @@ export function Hero() {
           </span>
           <h1 className="text-5xl md:text-7xl font-serif font-bold text-slate-900 leading-[1.1] mb-6 drop-shadow-sm">
             Luxury Mobile <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-purple-600">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-amber-600">
               Nails in Bali
             </span>
           </h1>

@@ -26,7 +26,7 @@ export default function About() {
               </Badge>
               <h1 className="text-4xl md:text-7xl font-serif font-bold text-slate-900 mb-6 leading-tight">
                 We Didn't Invent Mobile Spa. <br/>
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-purple-600">
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-amber-600">
                   We Perfected It.
                 </span>
               </h1>
@@ -45,7 +45,7 @@ export default function About() {
                 <div className="absolute -inset-4 bg-secondary/10 rounded-3xl transform -rotate-3"></div>
                 <img 
                   src={scooterImg} 
-                  alt="Bali Nail Nomads Origins" 
+                  alt="Private Beauty Salon Origins" 
                   className="relative rounded-2xl shadow-2xl w-full object-cover aspect-[4/3] transform hover:scale-[1.02] transition-transform duration-500"
                 />
               </div>
@@ -143,7 +143,7 @@ export default function About() {
                 <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-purple-500/20 rounded-3xl transform rotate-1 transition-transform group-hover:rotate-0 duration-500"></div>
                 <img 
                     src={teamImg} 
-                    alt="The Bali Nail Nomads Team" 
+                    alt="The Private Beauty Salon Team" 
                     className="relative rounded-2xl shadow-xl w-full object-cover"
                 />
             </div>

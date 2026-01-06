@@ -9,7 +9,7 @@ export function Footer() {
           <div className="space-y-4">
             <Link href="/">
               <a className="text-2xl font-serif font-bold text-foreground">
-                Bali Nail <span className="text-primary">Nomads</span>
+                Private Beauty <span className="text-primary">Salon</span>
               </a>
             </Link>
             <p className="text-muted-foreground text-sm leading-relaxed">
@@ -61,7 +61,7 @@ export function Footer() {
         </div>
         
         <div className="border-t border-border pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-muted-foreground">
-          <p>&copy; 2026 Bali Nail Nomads. All rights reserved.</p>
+          <p>&copy; 2026 Private Beauty Salon. All rights reserved.</p>
           <div className="flex gap-6 mt-4 md:mt-0">
             <Link href="/privacy">Privacy Policy</Link>
             <Link href="/terms">Terms of Service</Link>
